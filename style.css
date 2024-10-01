@@ -108,7 +108,6 @@ li {
 
 .col-center {
   width: 50%;
-  justify-content: center;
 }
 
 .btn-icons {
@@ -200,7 +199,7 @@ li {
 
   .col-center {
     width: 30%;
-    margin-left: auto;
+    margin-left: 70px;
   }
 
   .btn-icons {
