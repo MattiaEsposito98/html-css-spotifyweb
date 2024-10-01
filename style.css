@@ -1,43 +1,131 @@
+:root {
+  --font-color: white;
+}
+
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	color: currentColor;
-	text-decoration: none;
+  color: currentColor;
+  text-decoration: none;
 }
 
 ul,
 ol {
-	list-style: none;
+  list-style: none;
+}
+
+i {
+  margin: 5px;
 }
 
 /* Layout */
-.page-main{
+.page-main {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.card-body{
+.card-body {
   border: 1px solid blue;
   flex-grow: 1;
   display: flex;
 }
 
-.card-player{
-border: 1PX solid blue;
-flex-grow: 0;
-}
-
-.menu-sidebar{
+.menu-sidebar {
   width: 250px;
-  border: 1px solid yellow;
+  background-color: black;
+  color: white;
 }
 
-.card-group{
+.card-group {
   flex-grow: 1;
-  border: 1px solid yellow;
+  background-color: #141922;
+}
+
+/* Footer-player */
+.card-player {
+  flex-grow: 0;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-icons {
+  width: 30%;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  color: var(--font-color);
+}
+
+.col-50 {
+  width: 50%;
+  justify-content: center;
+}
+
+.btn-icons {
+  color: var(--font-color);
+  font-size: 30px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icons :nth-child(3) {
+  font-size: 50px;
+}
+
+.d_line-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.line-minute {
+  width: 500px;
+  display: block;
+  height: 2px;
+  background-color: white;
+  margin: 0px 10px;
+}
+
+.d_line-menu span {
+  color: var(--font-color);
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.btn-icons_right {
+  width: 30%;
+  color: var(--font-color);
+  font-size: 20 px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-icons_right .line-minute {
+  width: 100px;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 575px) {
+  .menu-sidebar {
+    width: 50px;
+  }
 }
