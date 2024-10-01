@@ -55,7 +55,7 @@ i {
 }
 
 .song-icons {
-  width: 30%;
+  width: 20%;
   padding-left: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -106,9 +106,7 @@ i {
 }
 
 .btn-icons_right {
-  width: 30%;
   color: var(--font-color);
-  font-size: 20 px;
   padding-right: 10px;
   display: flex;
   align-items: center;
@@ -128,4 +126,10 @@ i {
   .menu-sidebar {
     width: 50px;
   }
+  .song-icons {
+    width: 20%;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
 }
