@@ -64,7 +64,7 @@ i {
   color: var(--font-color);
 }
 
-.col-50 {
+.col-center {
   width: 50%;
   justify-content: center;
 }
@@ -111,7 +111,6 @@ i {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: flex-end;
 }
 
 .btn-icons_right .line-minute {
@@ -126,10 +125,40 @@ i {
   .menu-sidebar {
     width: 50px;
   }
+
   .song-icons {
     width: 20%;
     padding-left: 20px;
     display: flex;
     flex-wrap: nowrap;
-}
+  }
+
+  .song-icons img {
+    height: 50px;
+  }
+
+  .col-center {
+    width: 30%;
+    margin-left: auto;
+  }
+
+  .btn-icons {
+    color: var(--font-color);
+    font-size: 20px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .btn-icons :nth-child(3) {
+    font-size: 30px;
+  }
+
+  .btn-icons_right {
+    width: 30%;
+    color: var(--font-color);
+    gap: 2px;
+  }
 }
