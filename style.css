@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* Layout */
+.page-main{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body{
+  border: 1px solid blue;
+  flex-grow: 1;
+  display: flex;
+}
+
+.card-player{
+border: 1PX solid blue;
+flex-grow: 0;
+}
+
+.menu-sidebar{
+  width: 250px;
+  border: 1px solid yellow;
+}
+
+.card-group{
+  flex-grow: 1;
+  border: 1px solid yellow;
+}
