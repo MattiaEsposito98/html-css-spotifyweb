@@ -3,6 +3,7 @@
 
 :root {
   --font-color: white;
+  --subtitle-color: #939393;
 }
 
 html {
@@ -157,6 +158,31 @@ i:not(.fa-circle):hover {
   font-size: 30px;
   font-weight: 900;
   padding:50px 20px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-16{
+  width: 16%;
+}
+
+.col-16 img{
+  width: 100%;
+}
+
+.card-info{
+  padding-top: 20px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.card-info h5{
+  padding-top: 15px;
+  color: var(--subtitle-color);
 }
 
 
