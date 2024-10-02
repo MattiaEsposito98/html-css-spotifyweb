@@ -138,6 +138,10 @@ i:not(.fa-circle):hover {
   transform: scaleY(1.2);
 }
 
+.menu-center{
+  height: 50px;
+}
+
 .menu-center ul{
   display: flex;
   flex-direction: row;
