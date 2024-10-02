@@ -29,6 +29,10 @@ i {
   margin: 5px;
 }
 
+i:hover {
+  transform: scale(1.5);
+}
+
 /* Layout */
 .page-main {
   height: 100vh;
@@ -61,6 +65,12 @@ li {
   margin-top: 10px;
 }
 
+.menu-sidebar u,
+li:hover {
+  font-weight: 900;
+  border-left: 5px solid green;
+}
+
 .btn-playlist {
   padding: 5px 10px;
   font-size: 30px;
@@ -73,6 +83,10 @@ li {
   margin-top: 280px;
 }
 
+.span-hover:hover{ 
+  font-weight: 900 ;
+}
+
 .info .a-line::after {
   content: '';
   display: block;
@@ -81,6 +95,8 @@ li {
   border-bottom: 1px solid #939393;
   margin-top: 2px;
 }
+
+
 
 
 /* Contenuto principale */
@@ -106,6 +122,10 @@ li {
   align-items: center;
   gap: 19px;
   color: var(--font-color);
+}
+
+.underlined:hover {
+  text-decoration: underline;
 }
 
 .col-center {
@@ -137,9 +157,9 @@ li {
 
 .line-minute {
   height: 4px;
-	width: 120px;
-	flex-grow: 1;
-	background-color: rgba(255, 255, 255, 0.5);
+  width: 120px;
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .d_line-menu span {
@@ -166,7 +186,7 @@ li {
 
 /* Media queries */
 /* S */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   .song-icons {
     width: 250px;
     padding-left: 20px;
@@ -174,6 +194,7 @@ li {
     flex-wrap: nowrap;
     gap: 10px;
   }
+
   .col-center {
     width: 30%;
     margin-right: 20px;
@@ -194,10 +215,10 @@ li {
     font-size: 30px;
   }
 
-  .d_line-menu{
+  .d_line-menu {
     margin: 0 auto;
   }
-  
+
   .btn-icons_right {
     width: 30%;
     color: var(--font-color);
@@ -205,7 +226,7 @@ li {
   }
 
 
- }
+}
 
 
 
@@ -266,10 +287,10 @@ li {
     font-size: 30px;
   }
 
-  .d_line-menu{
+  .d_line-menu {
     margin: 0 auto;
   }
-  
+
   .btn-icons_right {
     width: 30%;
     color: var(--font-color);
