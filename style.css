@@ -47,7 +47,8 @@ i {
   color: white;
   padding-left: 20px;
   padding-top: 20px;
-  
+  flex-shrink: 0;
+
 }
 
 .menu-sidebar img {
@@ -68,16 +69,16 @@ li {
   cursor: pointer;
 }
 
-.info{
+.info {
   margin-top: 280px;
 }
 
 .info .a-line::after {
-	content: '';
-	display: block;
-	width: 200px;
-	height: 0;
-	border-bottom: 1px solid #939393;
+  content: '';
+  display: block;
+  width: 200px;
+  height: 0;
+  border-bottom: 1px solid #939393;
   margin-top: 2px;
 }
 
@@ -97,6 +98,7 @@ li {
 }
 
 .song-icons {
+  padding: 10px;
   width: 20%;
   padding-left: 20px;
   display: flex;
@@ -107,35 +109,37 @@ li {
 }
 
 .col-center {
-  width: 50%;
+  width: 40%;
 }
 
 .btn-icons {
+  padding: 10px;
   color: var(--font-color);
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
 
 .btn-icons :nth-child(3) {
-  font-size: 50px;
+  font-size: 40px;
+  margin: 0 10PX;
 }
 
 .d_line-menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 
 }
 
 .line-minute {
-  width: 500px;
-  display: block;
-  height: 2px;
-  background-color: white;
-  margin: 0px 10px;
+  height: 4px;
+	width: 120px;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .d_line-menu span {
@@ -165,24 +169,23 @@ li {
   .menu-sidebar {
     width: 50px;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .menu-sidebar img{
+  .menu-sidebar img {
     height: 30px;
   }
 
-  .menu-sidebar span{
+  .menu-sidebar span {
     display: none;
   }
 
-  .info{
-    margin-top: 650px;
-  }
-  
   .info .a-line::after {
     display: none;
   }
-  
+
 
   /* Footer */
   .song-icons {
@@ -194,12 +197,14 @@ li {
   }
 
   .song-icons img {
-    height: 50px;
+    height: 42px;
   }
 
   .col-center {
     width: 30%;
-    margin-left: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .btn-icons {
@@ -216,6 +221,10 @@ li {
     font-size: 30px;
   }
 
+  .d_line-menu{
+    margin: 0 auto;
+  }
+  
   .btn-icons_right {
     width: 30%;
     color: var(--font-color);
