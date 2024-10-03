@@ -8,7 +8,7 @@
 
 html {
   font-family: "Open Sans", sans-serif;
-  
+
 }
 
 * {
@@ -53,7 +53,10 @@ i:not(.fa-circle):hover {
 /* Menù */
 .position-menu {
   position: relative;
-  
+
+}
+.logo-small{
+  display: none;
 }
 
 .menu-sidebar {
@@ -66,7 +69,7 @@ i:not(.fa-circle):hover {
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  position:sticky;
+  position: sticky;
   height: 856px;
   top: 0;
 }
@@ -92,7 +95,7 @@ i:not(.fa-circle):hover {
   background-color: green;
 }
 
-.menu-sidebar li:not(.playlist-none):hover{
+.menu-sidebar li:not(.playlist-none):hover {
   font-weight: 900;
 }
 
@@ -192,7 +195,7 @@ i:not(.fa-circle):hover {
   margin: 0 auto;
 }
 
-.menu-center li:hover{
+.menu-center li:hover {
   font-weight: 900;
 }
 
@@ -200,7 +203,7 @@ i:not(.fa-circle):hover {
   color: var(--font-color);
   font-size: 20px;
   font-weight: 900;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .container {
@@ -228,7 +231,7 @@ i:not(.fa-circle):hover {
 }
 
 h5 {
-  padding-top: 15px;
+  padding-top: 10px;
   color: var(--subtitle-color);
 }
 
@@ -247,10 +250,14 @@ h5 {
   padding: 0 0px 30px;
 }
 
-.tile-card_bottom{
+.tile-card_bottom {
   margin-bottom: 20px;
 }
 
+
+.img-radius {
+  border-radius: 50%;
+}
 
 /* Footer-player */
 .position-player {
@@ -362,22 +369,48 @@ h5 {
 
 /* Media queries */
 /*Large */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+  .menu-center ul {
+    font-size: 12px;
+  }
+
+  .card-info h4{
+    font-size: 14px;
+  }
+}
 
 /* Medium */
 @media (max-width:991.98px) {
+  .menu-center ul {
+    font-size: 14px;
+    gap: 22px;
+  }
+
+  .row {
+    justify-content: flex-start;
+  }
+
   .col-16 {
     width: calc(100% /4);
   }
 
-  .card-info h3 {
+  .card-info h5 {
     font-size: 12px;
+    padding-bottom: 20px;
   }
 }
 
 
 /* S small */
 @media (max-width: 767.98px) {
+  /* .menu-sidebar {
+  height: 917px;
+  } */
+  
+  .col-16 {
+    width: calc(100% / 2);
+  }
+
   .song-icons {
     width: 250px;
     padding-left: 20px;
@@ -425,20 +458,20 @@ h5 {
 }
 
 
-
 /* XS  */
 @media (max-width: 575.98px) {
   .menu-sidebar {
     width: 50px;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
-  .menu-sidebar img {
-    height: 30px;
-  }
+.logo-big{
+  display: none;
+}
+
+.logo-small{
+  display: block;
+}
+
 
   .menu-sidebar span {
     display: none;
@@ -452,6 +485,10 @@ h5 {
     display: none;
   }
 
+  .menu-center ul {
+    font-size: 14px;
+    gap: 24px;
+  }
 
   /* Footer */
   .song-icons {
