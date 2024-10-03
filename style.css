@@ -49,13 +49,31 @@ i:not(.fa-circle):hover {
   background-color: black;
 }
 
+.img__play-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play-hover{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  opacity: 0;
+}
+
+.play-hover:hover{
+  opacity: 1;
+}
 
 /* Menù */
 .position-menu {
   position: relative;
 
 }
-.logo-small{
+
+.logo-small {
   display: none;
 }
 
@@ -374,7 +392,7 @@ h5 {
     font-size: 12px;
   }
 
-  .card-info h4{
+  .card-info h4 {
     font-size: 14px;
   }
 }
@@ -406,7 +424,7 @@ h5 {
   /* .menu-sidebar {
   height: 917px;
   } */
-  
+
   .col-16 {
     width: calc(100% / 2);
   }
@@ -464,13 +482,13 @@ h5 {
     width: 50px;
   }
 
-.logo-big{
-  display: none;
-}
+  .logo-big {
+    display: none;
+  }
 
-.logo-small{
-  display: block;
-}
+  .logo-small {
+    display: block;
+  }
 
 
   .menu-sidebar span {
